@@ -46,8 +46,8 @@ if previous_messages:
     st.write("Chat Log:")
     for message in previous_messages:
         if message.startswith("You:"):
-            st.text_input(label = " ", value=message, key=message)
+            st.text_input(label = "input", value=message, key=message,label_visibility="hidden")
         else:
             num_lines = len(message.split("\n"))
             height = min(300, max(30, num_lines * 25))
-            st.text_area(label = " ", value=message, height=height, key=message)
+            st.text_area(label = "input", value=message, height=height, key=message,label_visibility="hidden")

@@ -1,0 +1,525 @@
+{
+  "intents": [
+    {
+    "tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I'm Maxx, your bot assistant", "I'm Maxx, an Artificial Intelligent bot"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me Maxx.", "I'm Maxx!", "Just call me as Maxx"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+    },
+    {
+      "tag": "FemurOptionsCount",
+      "patterns": [
+        "How many Femur options are there",
+        "Number of Femur options",
+        "What are the options for Femur",
+        "Count of Femur options"
+      ],
+      "responses": [
+        "There are 8 options for Femur."
+      ]
+    },
+    {
+      "tag": "TibiaOptionsCount",
+      "patterns": [
+        "How many Tibia options are there",
+        "Number of Tibia options",
+        "What are the options for Tibia",
+        "Count of Tibia options"
+      ],
+      "responses": [
+        "There are 8 options for Tibia."
+      ]
+    },
+    {
+        "tag": "femoral_options",
+        "patterns": [
+          "What are the available femoral options?",
+          "Can you tell me about femoral sizes?",
+          "Which femoral sizes are available?"
+        ],
+        "responses": [
+          "The available femoral options are A, B, C, D, E, F, G, and H."
+        ]
+      },
+      {
+        "tag": "tibial_options",
+        "patterns": [
+          "What are the available tibial options?",
+          "Can you tell me about tibial sizes?",
+          "Which tibial sizes are available?"
+        ],
+        "responses": [
+          "The available tibial options are 1, 2, 3, 4, 5, 6, 7, and 8."
+        ]
+      },
+      {
+        "tag": "femoral_tibial_combinations",
+        "patterns": [
+          "What are the available femoral-tibial combinations?",
+          "Which femoral sizes can be used with which tibial sizes?",
+          "Can you tell me about the combinations of femoral and tibial sizes?"
+        ],
+        "responses": [
+          "The available femoral-tibial combinations are: \nA-1, A-2,\nB-1, B-2,\nC-1, C-2, C-3, C-4,\nD-1, D-2, D-3, D-4,\nE-3, E-4, E-5, E-6,\nF-3, F-4, F-5, F-6, F-7, F-8,\nG-5, G-6, G-7, G-8,\nH-7, H-8"
+        ]
+      },
+    {
+      "tag": "FemurOptionsStandard",
+      "patterns": [
+        "Are all Femur Options standard options",
+        "Which Femur options are standard",
+        "Availability of standard Femur options",
+        "Standard Femur options"
+      ],
+      "responses": [
+        "All sizes except size A does come as a standard option and size A is available only on additional request."
+      ]
+    },
+    {
+      "tag": "TibiaOptionsStandard",
+      "patterns": [
+        "Are all Tibial options standard options",
+        "Which Tibial options are standard",
+        "Availability of standard Tibial options",
+        "Standard Tibial options"
+      ],
+      "responses": [
+        "Yes, all Tibial options are standard options."
+      ]
+    },
+    {
+      "tag": "FemurTibiaChart",
+      "patterns": [
+        "What Femur goes with what Tibia",
+        "Mapping of Femur and Tibia options",
+        "Which Tibia is compatible with which Femur",
+        "Femur-Tibia chart"
+      ],
+      "responses": ["Please refer to the chart given below:\n\nTibial Options for Femoral types(A-G)\n1   2   3   4   5   6   7    8\nA   A  C   C   E   E   F   F\nB   B  D   D  F   F   G  G\nC   C  E    E  G  G   H  H\nD   D  F    F   -    -    -    -\n"]
+ 
+    },
+    {
+        "tag": "tibial_options_for_femoral_sizeA",
+        "patterns": [
+          "What tibial options are available for femoral size A?",
+          "Which tibial sizes can be used with femoral size A?", "Tibial sizes for Femoral A"
+        ],
+        "responses": [
+          "The available tibial options for femoral size A are 1 and 2."
+        ]
+      },
+    {
+        "tag": "tibial_options_for_femoral_sizeB",
+        "patterns": [
+          "What tibial options are available for femoral size B?",
+          "Which tibial sizes can be used with femoral size B?", 
+          "Tibial sizes for Femoral B"
+        ],
+        "responses": [
+          "The available tibial options for femoral size B are 1 and 2."
+        ]
+      },
+      
+      {
+        "tag": "tibial_options_for_femoral_sizeC",
+        "patterns": [
+          "What tibial options are available for femoral size C?",
+          "Which tibial sizes can be used with femoral size C?", 
+          "Tibial sizes for Femoral C"
+        ],
+        "responses": [
+          "The available tibial options for femoral size C are 1, 2, 3 and 4."
+        ]
+      },
+      
+      {
+        "tag": "tibial_options_for_femoral_sizeD",
+        "patterns": [
+          "What tibial options are available for femoral size D?",
+          "Which tibial sizes can be used with femoral size D?", 
+          "Tibial size for Femoral D"
+        ],
+        "responses": [
+          "The available tibial options for femoral size D are 1, 2, 3 and 4."
+        ]
+      },
+      
+      {
+        "tag": "tibial_options_for_femoral_sizeE",
+        "patterns": [
+          "What tibial options are available for femoral size E?",
+          "Which tibial sizes can be used with femoral size E?", 
+          "Tibial size for Femoral E"
+        ],
+        "responses": [
+          "The available tibial options for femoral size E are 3, 4, 5 and 6."
+        ]
+      },
+      
+      {
+        "tag": "tibial_options_for_femoral_sizeF",
+        "patterns": [
+          "What tibial options are available for femoral size F?",
+          "Which tibial sizes can be used with femoral size F?", 
+          "Tibial size for Femoral F"
+        ],
+        "responses": [
+          "The available tibial options for femoral size F are 3, 4, 5, 6, 7 and 8."
+        ]
+      },
+      
+      {
+        "tag": "tibial_options_for_femoral_sizeG",
+        "patterns": [
+          "What tibial options are available for femoral size G?",
+          "Which tibial sizes can be used with femoral size G?", 
+          "Tibial size for Femoral G"
+        ],
+        "responses": [
+          "The available tibial options for femoral size G are 5, 6, 7 and 8."
+        ]
+      },
+
+      {
+        "tag": "tibial_options_for_femoral_sizeH",
+        "patterns": [
+          "What tibial options are available for femoral size H?",
+          "Which tibial sizes can be used with femoral size H?", 
+          "Tibial size for Femoral H"
+        ],
+        "responses": [
+          "The available tibial options for femoral size H are 7 and 8."
+        ]
+      },
+
+      {
+        "tag": "femoral_options_for_tibial_size1",
+        "patterns": [
+          "What femoral options can be used with tibial size 1?",
+          "Which femoral sizes are compatible with tibial size 1?",
+          "Femoral size for Tibial Base 1"
+        ],
+        "responses": [
+          "The femoral options that can be used with tibial size 1 are A, B, C and D."
+        ]
+      },
+
+      {
+        "tag": "femoral_options_for_tibial_size2",
+        "patterns": [
+          "What femoral options can be used with tibial size 2?",
+          "Which femoral sizes are compatible with tibial size 2?",
+          "Femoral size for Tibial Base 2"
+        ],
+        "responses": [
+          "The femoral options that can be used with tibial size 2 are A, B, C and D."
+        ]
+      },
+
+      {
+        "tag": "femoral_options_for_tibial_size3",
+        "patterns": [
+          "What femoral options can be used with tibial size 3?",
+          "Which femoral sizes are compatible with tibial size 3?",
+          "Femoral size for Tibial Base 3"
+        ],
+        "responses": [
+          "The femoral options that can be used with tibial size 3 are C, D, E and F."
+        ]
+      },
+
+      {
+        "tag": "femoral_options_for_tibial_size4",
+        "patterns": [
+          "What femoral options can be used with tibial size 4?",
+          "Which femoral sizes are compatible with tibial size 4?",
+          "Femoral size for Tibial Base 4"
+        ],
+        "responses": [
+          "The femoral options that can be used with tibial size 4 are C, D, E and F."
+        ]
+      },
+
+      {
+        "tag": "femoral_options_for_tibial_size5",
+        "patterns": [
+          "What femoral options can be used with tibial size 5?",
+          "Which femoral sizes are compatible with tibial size 5?",
+          "Femoral size for Tibial Base 5"
+        ],
+        "responses": [
+          "The femoral options that can be used with tibial size 5 are E, F and G."
+        ]
+      },
+
+      {
+        "tag": "femoral_options_for_tibial_size6",
+        "patterns": [
+          "What femoral options can be used with tibial size 6?",
+          "Which femoral sizes are compatible with tibial size 6?",
+          "Femoral size for Tibial Base 6"
+        ],
+        "responses": [
+          "The femoral options that can be used with tibial size 6 are E, F and G."
+        ]
+      },
+
+      {
+        "tag": "femoral_options_for_tibial_size7",
+        "patterns": [
+          "What femoral options are available for tibial size 7?",
+          "Which femoral sizes can be used with tibial size 7?", 
+          "Femoral size for Tibial 7"
+        ],
+        "responses": [
+          "The available femoral options for tibial size 7 are F, G and H."
+        ]
+      },
+
+      {
+        "tag": "femoral_options_for_tibial_size8",
+        "patterns": [
+          "What femoral options are available for tibial size 8?",
+          "Which femoral sizes can be used with tibial size 8?", 
+          "Femoral size for Tibial 8"
+        ],
+        "responses": [
+          "The available femoral options for tibial size 8 are F, G and H."
+        ]
+      },
+      
+    {
+      "tag": "APMLDimensionOfFemur",
+      "patterns": [
+        "What is the AP and ML dimension of all femurs available",
+        "AP and ML dimensions of Femur sizes",
+        "Anterior Posterior dimension of Femur sizes"
+      ],
+      "responses": [
+        "Please refer to the chart for the AP and ML dimensions of all the Femur sizes.\n Femoral Size\tAP\tML\n A\t\t51\t54\nB\t\t54\t58\nC\t\t58\t62\nD\t\t60\t64\nE\t\t62\t66\nF\t\t66\t70\nG\t\t70\t74\nH\t\t74\t78\n" 
+  ]
+      
+    },
+
+    {
+        "tag": "APMLDimensionOfTibia",
+        "patterns": [
+          "What is the AP and ML dimension of all tibias available",
+          "AP and ML dimensions of Tibial sizes",
+          "Anterior Posterior and Medio Lateral dimensions of Tibial sizes"
+        ],
+        "responses": [
+          "Please refer to the chart for the AP and ML dimensions of all the Tibial sizes.\nTibial Size\tAP\tML\n1\t\t40\t59\n2\t\t40\t62\n3\t\t42\t66\n4\t\t46\t66\n5\t\t48\t71\n6\t\t50\t72\n7\t\t52\t76\n8\t\t54\t78\n"
+    ]
+        
+      },
+
+    {
+        "tag": "femoral_size_A",
+        "patterns": [
+          "What are the dimensions for femoral size A?",
+          "What are the AP and ML dimensions of femoral size A?",
+          "What is the size A femoral component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of femoral size A is 51 and the ML dimension is 54."
+        ]
+      },
+      {
+        "tag": "femoral_size_B",
+        "patterns": [
+          "What are the dimensions for femoral size B?",
+          "What are the AP and ML dimensions of femoral size B?",
+          "What is the size B femoral component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of femoral size B is 54 and the ML dimension is 58."
+        ]
+      },
+      {
+        "tag": "femoral_size_C",
+        "patterns": [
+          "What are the dimensions for femoral size C?",
+          "What are the AP and ML dimensions of femoral size C?",
+          "What is the size C femoral component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of femoral size C is 58 and the ML dimension is 62."
+        ]
+      },
+      {
+        "tag": "femoral_size_D",
+        "patterns": [
+          "What are the dimensions for femoral size D?",
+          "What are the AP and ML dimensions of femoral size D?",
+          "What is the size D femoral component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of femoral size D is 60 and the ML dimension is 64."
+        ]
+      },
+      {
+        "tag": "femoral_size_E",
+        "patterns": [
+          "What are the dimensions for femoral size E?",
+          "What are the AP and ML dimensions of femoral size E?",
+          "What is the size E femoral component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of femoral size E is 62 and the ML dimension is 66."
+        ]
+      },
+      {
+        "tag": "femoral_size_F",
+        "patterns": [
+          "What are the dimensions for femoral size F?",
+          "What are the AP and ML dimensions of femoral size F?",
+          "What is the size F femoral component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of femoral size F is 66 and the ML dimension is 70."
+        ]
+      },
+      {
+        "tag": "femoral_size_G",
+        "patterns": [
+          "What are the dimensions for femoral size G?",
+          "What are the AP and ML dimensions of femoral size G?",
+          "What is the size G femoral component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of femoral size G is 70 and the ML dimension is 74."
+        ]
+      },
+      {
+        "tag": "femoral_size_H",
+        "patterns": [
+          "What are the dimensions for femoral size H?",
+          "What are the AP and ML dimensions of femoral size H?",
+          "What is the size H femoral component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of femoral size H is 74 and the ML dimension is 78."
+        ]
+      },
+
+      {
+        "tag": "tibial_size_1",
+        "patterns": [
+          "What are the dimensions of tibial size 1?",
+          "What are the AP and ML dimensions of tibial size 1?",
+          "What is the size 1 tibial component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of tibial size 1 is 40 and the ML dimension is 59."
+        ]
+      },
+      
+      {
+        "tag": "tibial_size_2",
+        "patterns": [
+          "What are the dimensions of tibial size 2?",
+          "What are the AP and ML dimensions of tibial size 2?",
+          "What is the size 2 tibial component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of tibial size 2 is 40 and the ML dimension is 62."
+        ]
+      },
+      
+      {
+        "tag": "tibial_size_3",
+        "patterns": [
+          "What are the dimensions of tibial size 3?",
+          "What are the AP and ML dimensions of tibial size 3?",
+          "What is the size 3 tibial component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of tibial size 3 is 42 and the ML dimension is 66."
+        ]
+      },
+      
+      {
+        "tag": "tibial_size_4",
+        "patterns": [
+          "What are the dimensions of tibial size 4?",
+          "What are the AP and ML dimensions of tibial size 4?",
+          "What is the size 4 tibial component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of tibial size 4 is 46 and the ML dimension is 66."
+        ]
+      },
+      
+      {
+        "tag": "tibial_size_5",
+        "patterns": [
+          "What are the dimensions of tibial size 5?",
+          "What are the AP and ML dimensions of tibial size 5?",
+          "What is the size 5 tibial component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of tibial size 5 is 48 and the ML dimension is 71."
+        ]
+      },
+      
+      {
+        "tag": "tibial_size_6",
+        "patterns": [
+          "What are the dimensions of tibial size 6?",
+          "What are the AP and ML dimensions of tibial size 6?",
+          "What is the size 6 tibial component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of tibial size 6 is 50 and the ML dimension is 72."
+        ]
+      },
+      
+      {
+        "tag": "tibial_size_7",
+        "patterns": [
+          "What are the dimensions of tibial size 7?",
+          "What are the AP and ML dimensions of tibial size 7?",
+          "What is the size 7 tibial component's dimensions?"
+        ],
+        "responses": [
+          "The AP dimension of tibial size 7 is 52 and the ML dimension is 76."
+        ]
+      },
+      
+      {
+        "tag": "tibial_size_8",
+        "patterns": [
+          "What are the dimensions of tibial size 8?",
+          "What are the AP and ML dimensions of tibial size 8?",
+          "What is the size 8 tibial component's dimensions?"
+        ],
+        "responses": [
+            "The AP dimension of tibial size 8 is 54 and the ML dimension is 78."
+        ]
+      }
+    ]
+
+    }
+      
+      
+    

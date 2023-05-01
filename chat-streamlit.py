@@ -35,7 +35,7 @@ def chat(inp):
 st.title("MAXX ORTHO CHATBOT DEMO")
 st.write("This is the prototype of the chatbot")
 previous_messages =[]
-user_input = st.text_input("You",label = "input",label_visibility="hidden")
+user_input = st.text_input("You:")
 
 if st.button("Send"):
     previous_messages.append(f"You: {user_input}")
@@ -46,8 +46,8 @@ if previous_messages:
     st.write("Chat Log:")
     for message in previous_messages:
         if message.startswith("You:"):
-            st.text_input(label = "input",label_visibility="hidden", value=message, key=message)
+            st.text_input(label = " ", value=message, key=message)
         else:
             num_lines = len(message.split("\n"))
             height = min(300, max(30, num_lines * 25))
-            st.text_area(label = "input",label_visibility="hidden", value=message, height=height, key=message)
+            st.text_area(label = " ", value=message, height=height, key=message)

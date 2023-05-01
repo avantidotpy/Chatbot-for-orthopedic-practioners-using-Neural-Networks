@@ -35,7 +35,7 @@ def chat(inp):
 st.title("MAXX ORTHO CHATBOT DEMO")
 st.write("This is the prototype of the chatbot")
 previous_messages =[]
-user_input = st.text_input(" " ,"User Input")
+user_input = st.text_input("You"," ")
 
 if st.button("Send"):
     previous_messages.append(f"You: {user_input}")
